@@ -9,6 +9,7 @@ Intended for [consumer driven contracts](http://martinfowler.com/articles/consum
 
 ## Usage
 
+
 ```js
 import mergeJsonSchemas from 'merge-json-schemas'
 
