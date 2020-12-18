@@ -13,7 +13,7 @@
   "contributors": [
     "dannynelson <danny@goodeggs.com>"
   ],
-  "license": "Private",
+  "license": "MIT",
   "engines": {
     "node": ">=4"
   },
