@@ -5,7 +5,7 @@ Intended for [consumer driven contracts](http://martinfowler.com/articles/consum
 `mergeJsonSchemas` will:
 - merge keys in all schemas
 - error if keys are incompatible
-- create of union of "required" values
+- create a union of "required" values
 
 ## Usage
 
