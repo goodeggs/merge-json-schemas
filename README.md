@@ -5,7 +5,7 @@ Intended for [consumer driven contracts](http://martinfowler.com/articles/consum
 `mergeJsonSchemas` will:
 - merge keys in all schemas
 - error if keys are incompatible
-- create of union of "required" values
+- create a union of "required" values
 
 ## Usage
 
@@ -71,7 +71,8 @@ const providerSchema = {
 ```
 
 However, `mergeJsonSchemas` has a few advantages:
-- checks compatability - it validates that the schemas are compatible with each other
+- checks compatibility - it validates that the schemas are compatible with each other
+- simpler validation error messages - Validating with a library like [tv4](https://github.com/geraintluff/tv4), merged schema validation errors are easy to diagnose than `allOf` validation errors.
 - faster validation - it generates a smaller provider schema for faster validation
 - easier provider design - it provides wholistic representation of what the provider should give to the consumers
 - test factories - using a test factory tool like [JSON Schema Factory](https://github.com/goodeggs/unionized), you can derive factories from the provider schema for testing all of the consumers (rather than duplicating factories for each consumer).
